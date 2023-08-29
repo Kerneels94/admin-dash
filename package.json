@@ -17,6 +17,7 @@
     "@mui/material": "^5.14.6",
     "@mui/styled-engine-sc": "^5.14.6",
     "react": "^18.2.0",
+    "react-calendar": "^4.6.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.11"
   },
