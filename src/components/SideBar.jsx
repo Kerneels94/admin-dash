@@ -26,7 +26,7 @@ const SideBar = () => {
     <>
       {isOpen && (
         <div className="sidebar_container flex flex-col items-start gap-3 p-5 bg-zinc-800 w-52 h-96">
-          <div className="login">
+          <div className="login flex justify-between">
             <img src="#" alt="" />
             <Button varient="outlined" onClick={() => loginWithRedirect()}>
               Login
