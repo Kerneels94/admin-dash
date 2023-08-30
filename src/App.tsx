@@ -1,16 +1,14 @@
 import "./App.css";
 import AdminDash from "./components/AdminDash";
-import Calender from "./components/Calender";
-import SideBar from "./components/SideBar";
-import Todo from "./components/Todo";
+// import Calender from "./components/Calender";
+// import Todo from "./components/Todo";
 
 function App() {
   return (
     <>
-      <SideBar />
       <AdminDash />
-      <Calender />
-      <Todo />
+      {/* <Calender /> */}
+      {/* <Todo color="green" fontsize="2rem" /> */}
     </>
   );
 }

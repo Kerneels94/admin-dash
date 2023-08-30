@@ -1,4 +1,4 @@
-export const roi = [
+const roi = [
   {
     year: 2018,
     income: 25000,
@@ -28,3 +28,5 @@ export const roi = [
     income: "No data yet",
   },
 ];
+
+export default roi;

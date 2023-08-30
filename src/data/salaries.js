@@ -1,4 +1,4 @@
-export const salaries = [
+const salaries = [
   {
     id: 1,
     name: "Corrie",
@@ -30,3 +30,5 @@ export const salaries = [
     salarie: 7800,
   },
 ];
+
+export default salaries;
