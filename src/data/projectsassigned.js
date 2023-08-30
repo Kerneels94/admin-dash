@@ -1,24 +1,24 @@
 const projects = [
   {
-    id: 1,
+    id: self.crypto.randomUUID(),
     name: "Reports",
     technologies: ["react", "Tailwind Css", "Firebase database"],
     github: "www:github.com",
   },
   {
-    id: 2,
+    id: self.crypto.randomUUID(),
     name: "F1 App",
     technologies: ["react", "Tailwind Css"],
     github: "www:github.com",
   },
   {
-    id: 3,
+    id: self.crypto.randomUUID(),
     name: "Inpulsa",
     technologies: ["HTML", "Tailwind Css", "Javascript"],
     github: "www:github.com",
   },
   {
-    id: 4,
+    id: self.crypto.randomUUID(),
     name: "Admin Dash",
     technologies: ["react", "Tailwind Css", "Components library"],
     github: "www:github.com",

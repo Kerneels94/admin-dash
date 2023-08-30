@@ -1,6 +1,6 @@
 const numberOfStaff = [
   {
-    id: 1,
+    id: self.crypto.randomUUID(),
     number: 25,
   },
 ];
