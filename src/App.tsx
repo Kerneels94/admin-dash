@@ -1,14 +1,21 @@
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import AdminDash from "./components/AdminDash";
-// import Calender from "./components/Calender";
-// import Todo from "./components/Todo";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <>
-      <AdminDash />
-      {/* <Calender /> */}
-      {/* <Todo color="green" fontsize="2rem" /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AdminDash />} />
+          <Route path="/Skills" element={<Skills />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -1,4 +1,11 @@
-const currentProject = [
+interface ProjectProperties {
+  id: any;
+  name: string;
+  description: string;
+  technologies: string[];
+}
+
+const currentProject: ProjectProperties[] = [
   {
     id: self.crypto.randomUUID(),
     name: "Admin Dash",

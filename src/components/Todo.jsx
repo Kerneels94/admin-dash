@@ -1,22 +1,16 @@
-// Import useState and useEffect from react
 import { useState, useEffect } from "react";
 
-// Create a functional component called Todo
 const Todo = (props) => {
-  // Create a state called todo, and a function to set the state
   const [todo, setTodo] = useState("");
-  // Create a state called todos, and a function to set the state
   const [todos, setTodos] = useState([]);
 
   // Create a function that adds the todo to the todos state
   const addTodo = (todo) => {
-    // Add the todo to the todos state
     setTodos([...todos, todo]);
   };
 
   // Create a useEffect hook that will run when the todo state is updated
   useEffect(() => {
-    // Set the todo state
     setTodo(todo);
   }, [todo]);
 

@@ -2,6 +2,7 @@
  * Imports
  */
 import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import folderIcon from "../assets/folder-icon.svg";
 import skillsIcon from "../assets/construction.svg";
@@ -14,7 +15,6 @@ const SideBar = () => {
   return (
     <>
       <div className="flex justify-end">
-        <img src="#" alt="" />
         <Button varient="outlined" onClick={() => loginWithRedirect()}>
           <img src={loginIcon} alt="svg" className="w-8 h-8" />
           Login
@@ -24,21 +24,15 @@ const SideBar = () => {
         <div className="links flex flex-col gap-5 justify-end p-5">
           <div className="link-one flex flex-row items-center gap-2">
             <img src={folderIcon} alt="svg" className="w-5 h-5"></img>
-            <a href="#" className="hover:text-blue-300">
-              Projects
-            </a>
+            <Link to="/">Home</Link>
           </div>
           <div className="link-two flex flex-row items-center gap-2">
             <img src={skillsIcon} alt="svg" className="w-5 h-5" />
-            <a href="#" className="hover:text-blue-300">
-              Skills
-            </a>
+            <Link to="/skills">Skills</Link>
           </div>
           <div className="link-three flex flex-row items-center gap-2">
             <img src={contactIcon} alt="svg" className="w-5 h-5" />
-            <a href="#" className="hover:text-blue-300">
-              Contact
-            </a>
+            <Link to="/projects">Projects</Link>
           </div>
         </div>
       </div>

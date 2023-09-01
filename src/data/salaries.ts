@@ -1,4 +1,11 @@
-const salaries = [
+interface Salary {
+  id: any;
+  name: string;
+  profession: string;
+  salarie: number;
+}
+
+const salaries: Salary[] = [
   {
     id: self.crypto.randomUUID(),
     name: "Corrie",

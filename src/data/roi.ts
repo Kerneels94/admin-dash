@@ -1,4 +1,10 @@
-const roi = [
+interface RoiProperties {
+  id: any;
+  year: number;
+  income: number | string;
+}
+
+const roi: RoiProperties[] = [
   {
     id: self.crypto.randomUUID(),
     year: 2018,

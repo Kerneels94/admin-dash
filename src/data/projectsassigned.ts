@@ -1,4 +1,11 @@
-const projects = [
+interface Project {
+  id: any;
+  name: string;
+  technologies: string[];
+  github: string;
+}
+
+const projects: Project[] = [
   {
     id: self.crypto.randomUUID(),
     name: "Reports",
